@@ -1,72 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>数学辅导进阶文档库</title>
-<style>
-  :root{ --bg:#f8fafc; --card:#fff; --ink:#0f172a; --muted:#64748b; --brand:#2563eb; --brand2:#0d9488; }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-  .wrap{max-width:920px;margin:0 auto;padding:32px 20px 64px}
-  header{text-align:center;padding:24px 0 8px}
-  h1{font-size:1.9rem;margin:0 0 6px}
-  .sub{color:var(--muted);margin:0}
-  .hero{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
-  .hero a{display:block;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;text-decoration:none;border-radius:14px;padding:22px 20px;box-shadow:0 6px 18px rgba(37,99,235,.18)}
-  .hero a .t{font-size:1.15rem;font-weight:700}
-  .hero a .d{font-size:.85rem;opacity:.92;margin-top:6px}
-  .card{background:var(--card);border:1px solid #e2e8f0;border-radius:14px;padding:18px 20px;margin:18px 0;box-shadow:0 2px 8px rgba(15,23,42,.04)}
-  .card h2{font-size:1.1rem;margin:0 0 12px;color:var(--brand)}
-  ul{margin:0;padding-left:0;list-style:none}
-  li{padding:8px 0;border-bottom:1px dashed #eef2f7}
-  li:last-child{border-bottom:none}
-  li a{color:var(--ink);text-decoration:none;font-weight:500}
-  li a:hover{color:var(--brand)}
-  .tag{display:inline-block;font-size:.7rem;color:var(--muted);background:#f1f5f9;border-radius:6px;padding:1px 7px;margin-right:8px}
-  footer{text-align:center;color:var(--muted);font-size:.8rem;margin-top:28px}
-</style>
+  <meta charset="UTF-8">
+  <title>深圳中考数学辅导站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root { --dash-bg:#3b82f6; --dash-bg-h:#2563eb; }
+    .markdown-body { max-width: 980px; margin: 0 auto; }
+    .markdown-body img { max-width: 100%; }
+    /* 看板入口按钮 */
+    .dash-links { margin: 14px 0 8px; }
+    .dash-links .dash {
+      display: inline-block; margin: 6px 10px 6px 0; padding: 10px 16px;
+      background: var(--dash-bg); color: #fff; border-radius: 10px;
+      text-decoration: none; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    }
+    .dash-links .dash:hover { background: var(--dash-bg-h); }
+    /* 侧栏看板分组小标 */
+    .sidebar-dash-hint { color:#94a3b8; font-size:12px; padding:4px 0; }
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>数学辅导进阶文档库</h1>
-    <p class="sub">深圳业余中小学数学辅导 · 新课标研究 / 学情洞察 / 中考真题分析 / 兴趣与工具</p>
-  </header>
-
-  <div class="hero">
-    <a href="./深圳中考数学六年考卷分析-知识点看板.html">
-      <div class="t">📊 深圳中考六年考卷 · 知识点看板</div>
-      <div class="d">2021–2026 六年真题 126 题分块统计，含主分类/覆盖双口径对比图表</div>
-    </a>
-    <a href="./一页纸-差生提分路径.html">
-      <div class="t">🎯 一页纸 · 差生提分路径</div>
-      <div class="d">基础题清单 + 目标分表，给薄弱学生可执行的提分路线</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <h2>章节研究报告</h2>
-    <ul>
-      <li><span class="tag">01</span><a href="./level_up/01-2022新课标研究分析/2022数学新课标研究分析报告.md">2022 数学新课标研究分析</a></li>
-      <li><span class="tag">02</span><a href="./level_up/02-深圳初中生学情与兴趣切入/深圳初中生特点与数学兴趣切入.md">深圳初中生学情与兴趣切入</a></li>
-      <li><span class="tag">03</span><a href="./level_up/03-青少年数学兴趣养成/名师观点与实践方法.md">青少年数学兴趣养成</a></li>
-      <li><span class="tag">04</span><a href="./level_up/04-AI工具与游戏化/AI工具与游戏化提升数学兴趣.md">AI 工具与游戏化</a></li>
-      <li><span class="tag">05</span><a href="./level_up/05-3D可视化与空间几何/借助3D展示解决空间想象问题.md">3D 可视化与空间几何</a></li>
-      <li><span class="tag">06</span><a href="./level_up/06-深圳中考六年考卷分析/近六年深圳中考数学考卷分析报告.md">深圳中考六年考卷分析（报告全文）</a></li>
-      <li><span class="tag">07</span><a href="./level_up/07-辅导机构方案情报/国内数学辅导机构中小学方案情报.md">辅导机构方案情报</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>项目说明</h2>
-    <ul>
-      <li><a href="./level_up/README.md">level_up 总说明 README</a></li>
-      <li><a href="./level_up/信源核验报告.md">信源核验报告</a></li>
-    </ul>
-  </div>
-
-  <footer>由 level_up 教师进阶文档库自动整理 · 静态站点（GitHub Pages）· 数据截至 2026 年深圳中考</footer>
-</div>
+  <div id="app">文档加载中…若长时间停留，请确认网络可访问 cdn.jsdelivr.net</div>
+  <script>
+    window.$docsify = {
+      name: '深圳中考数学辅导站',
+      repo: 'coolmoonyao/math-coach',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      homepage: 'README.md',
+      notFoundPage: true,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索文档…',
+        noData: '找不到结果',
+        depth: 4
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
